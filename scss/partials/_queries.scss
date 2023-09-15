@@ -1,5 +1,67 @@
 //Index
+
+//HORARIOS
 @media (max-width: 798px){
+    .seccionHorarios {
+        .contenedorHorarios {
+            .horariosDias {
+                .horariosSem {
+                    .contenedorDias {
+                        p {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 640px){
+    .seccionHorarios {
+        .contenedorHorarios {
+            .horariosDias {
+                .horariosSem {
+                    .contenedorDias {
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 550px){
+    .seccionHorarios {
+        .contenedorHorarios {
+            .horariosDias {
+                .horariosSem {
+                    .contenedorDias {
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 490px){
+    .seccionHorarios {
+        .contenedorHorarios {
+            .horariosDias {
+                .horariosSem {
+                    .contenedorDias {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+@media (max-width: 400px){
     .seccionHorarios {
         .contenedorHorarios {
             .horariosDias {
@@ -13,4 +75,116 @@
             }
         }
     } 
+}
+
+//PASTELERIA
+
+//PORTADA
+@media (max-width : 616px) {
+    .portadaPasteleria {        
+        .contenedorTitle {
+            h1 {
+                font-size: 30px;     
+            }
+                
+            p {
+                font-size: 20px;            
+            }
+        }
+    }
+}
+@media (max-width : 545px) {
+    .portadaPasteleria {        
+        .contenedorTitle {
+            h1 {
+                font-size: 25px;     
+            }
+                
+            p {
+                font-size: 18px;            
+            }
+        }
+    }
+}
+@media (max-width : 454px) {
+    .portadaPasteleria {        
+        .contenedorTitle {
+            h1 {
+                font-size: 21px;     
+            }
+                
+            p {
+                font-size: 15px;            
+            }
+        }
+    }
+}
+//GUALEGUAYCHU
+
+//PORTADA
+@media (max-width: 766px) {
+    .portadaGchu {
+        .contenedorPortada {
+            .titulos {//mediaquery
+                position: absolute;
+                text-align: center;
+                .tituloPrincipal {
+                    font-size: 40px;
+                    padding: 7px 0;
+                }
+                .tituloSecundario {
+                    font-size: 25px;
+                    padding: 7px 0;
+                }
+                .parrafoTitulo {
+                    font-size: 20px;
+                    padding: 7px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 585px) {
+    .portadaGchu {
+        .contenedorPortada {
+            .titulos {//mediaquery
+                position: absolute;
+                text-align: center;
+                .tituloPrincipal {
+                    font-size: 35px;
+                    padding: 4px 0;
+                }
+                .tituloSecundario {
+                    font-size: 20px;
+                    padding: 4px 0;
+                }
+                .parrafoTitulo {
+                    font-size: 15px;
+                    padding: 4px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .portadaGchu {
+        .contenedorPortada {
+            .titulos {//mediaquery
+                position: absolute;
+                text-align: center;
+                .tituloPrincipal {
+                    font-size: 30px;
+                    padding: 1px 0;
+                }
+                .tituloSecundario {
+                    font-size: 20px;
+                    padding: 1px 0;
+                }
+                .parrafoTitulo {
+                    font-size: 13px;
+                    padding: 1px 0;
+                }
+            }
+        }
+    }
 }

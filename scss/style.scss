@@ -223,6 +223,7 @@ nav {
                 text-align: center;
                 .contenedorDias {
                     p {
+                        margin: 3px 0;
                         font-size: 30px; //mediaquery
                     }
                 }
@@ -818,4 +819,4 @@ footer {
 // MediaQueries
 
 
-@import url(./partials/_queries.scss);
+@import "./partials/_queries.scss";

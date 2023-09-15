@@ -1,6 +1,5 @@
 @import url(./partials/_reset.scss);
 @import url(./partials/_fuentes.scss);
-@import url(./partials/_queries.scss);
 .seccionOscura, .seccionClara {
   font-family: "Noto Serif", serif;
 }
@@ -181,6 +180,7 @@ nav .redesNav {
   text-align: center;
 }
 .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+  margin: 3px 0;
   font-size: 30px;
 }
 
@@ -690,6 +690,110 @@ footer .copyRight {
   margin-bottom: 2px;
   padding: 0 2px;
   width: 100%;
+}
+
+@media (max-width: 798px) {
+  .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 640px) {
+  .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 490px) {
+  .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 616px) {
+  .portadaPasteleria .contenedorTitle h1 {
+    font-size: 30px;
+  }
+  .portadaPasteleria .contenedorTitle p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 545px) {
+  .portadaPasteleria .contenedorTitle h1 {
+    font-size: 25px;
+  }
+  .portadaPasteleria .contenedorTitle p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 454px) {
+  .portadaPasteleria .contenedorTitle h1 {
+    font-size: 21px;
+  }
+  .portadaPasteleria .contenedorTitle p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 766px) {
+  .portadaGchu .contenedorPortada .titulos {
+    position: absolute;
+    text-align: center;
+  }
+  .portadaGchu .contenedorPortada .titulos .tituloPrincipal {
+    font-size: 40px;
+    padding: 7px 0;
+  }
+  .portadaGchu .contenedorPortada .titulos .tituloSecundario {
+    font-size: 25px;
+    padding: 7px 0;
+  }
+  .portadaGchu .contenedorPortada .titulos .parrafoTitulo {
+    font-size: 20px;
+    padding: 7px 0;
+  }
+}
+@media (max-width: 585px) {
+  .portadaGchu .contenedorPortada .titulos {
+    position: absolute;
+    text-align: center;
+  }
+  .portadaGchu .contenedorPortada .titulos .tituloPrincipal {
+    font-size: 35px;
+    padding: 4px 0;
+  }
+  .portadaGchu .contenedorPortada .titulos .tituloSecundario {
+    font-size: 20px;
+    padding: 4px 0;
+  }
+  .portadaGchu .contenedorPortada .titulos .parrafoTitulo {
+    font-size: 15px;
+    padding: 4px 0;
+  }
+}
+@media (max-width: 460px) {
+  .portadaGchu .contenedorPortada .titulos {
+    position: absolute;
+    text-align: center;
+  }
+  .portadaGchu .contenedorPortada .titulos .tituloPrincipal {
+    font-size: 30px;
+    padding: 1px 0;
+  }
+  .portadaGchu .contenedorPortada .titulos .tituloSecundario {
+    font-size: 20px;
+    padding: 1px 0;
+  }
+  .portadaGchu .contenedorPortada .titulos .parrafoTitulo {
+    font-size: 13px;
+    padding: 1px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
