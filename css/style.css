@@ -1,0 +1,695 @@
+@import url(./partials/_reset.scss);
+@import url(./partials/_fuentes.scss);
+@import url(./partials/_queries.scss);
+.seccionOscura, .seccionClara {
+  font-family: "Noto Serif", serif;
+}
+
+.seccionOscura {
+  background-color: black;
+  color: white;
+}
+.seccionOscura h2 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+}
+
+.seccionClara {
+  background-color: white;
+  color: #626262;
+}
+.seccionClara h2 {
+  color: #000000;
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+}
+
+.posicion {
+  color: #626262 !important;
+}
+
+nav {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+nav .contenedorNav .logoImg {
+  width: 120px;
+}
+nav .menuContainer .navbar-nav .nav-item a {
+  margin: 5px 20px;
+  padding: 0;
+  color: #000000;
+}
+nav .menuContainer .navbar-nav .nav-item a:hover {
+  color: #626262;
+}
+nav .menuContainer .navbar-nav .nav-item a i {
+  font-size: 18px;
+}
+nav .redesNav {
+  display: flex;
+  justify-content: center;
+}
+
+.portada {
+  position: relative;
+  text-align: center;
+}
+.portada .contenedorPortada {
+  padding: 0;
+}
+.portada .videoPortada {
+  width: 100%;
+  opacity: 0.5;
+}
+.portada h1 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seccionHero {
+  padding: 70px 30px;
+}
+.seccionHero h2 {
+  margin-bottom: 30px;
+}
+.seccionHero p {
+  font-size: 22px;
+}
+.seccionHero .contenedorCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccionHero .contenedorCarousel .carousel-inner {
+  max-width: 500px;
+}
+
+.seccionLlegar {
+  padding: 15px;
+}
+.seccionLlegar h2 {
+  padding: 15px 10px;
+  text-align: center;
+}
+.seccionLlegar p {
+  padding: 10px;
+  font-size: 22px;
+}
+.seccionLlegar .contenedorParLlegar1 {
+  margin-bottom: 25px;
+}
+.seccionLlegar .linkUbicacion {
+  display: flex;
+  justify-content: end;
+}
+.seccionLlegar .linkUbicacion a {
+  background-color: #ffffff;
+  margin-right: 15px;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s;
+}
+.seccionLlegar .linkUbicacion a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.seccionLlegar ul {
+  display: flex;
+  justify-content: center;
+}
+.seccionLlegar ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+.seccionLlegar ul li i {
+  padding: 5px 10px;
+  font-size: 25px;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.seccionLlegar ul li i:hover {
+  color: #626262;
+}
+
+.seccionVisitantes {
+  padding: 25px;
+}
+.seccionVisitantes h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.seccionVisitantes .contenedorParVisit {
+  display: flex;
+  align-items: center;
+}
+.seccionVisitantes p {
+  font-size: 22px;
+}
+.seccionVisitantes .contenedorImgVisitantes {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.seccionHorarios .contenedorHorarios {
+  padding: 0;
+  position: relative;
+}
+.seccionHorarios .contenedorHorarios img {
+  width: 100%;
+  opacity: 0.3;
+}
+.seccionHorarios .contenedorHorarios .horariosDias {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seccionHorarios .contenedorHorarios .horariosDias .horariosSem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  text-align: center;
+}
+.seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
+  font-size: 30px;
+}
+
+footer {
+  padding: 25px;
+  max-height: 100%;
+}
+footer hr {
+  margin: 20px 0;
+  width: 150px;
+  border: 4px solid #ffffff;
+}
+footer li {
+  list-style: none;
+  margin: 5px 0;
+}
+footer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s;
+}
+footer a:hover {
+  color: #626262;
+}
+footer .footerUbi, footer .footerMenu, footer .footerContacto, footer .footerRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+footer .footerRedes li {
+  display: inline-block;
+  margin: 0 15px;
+}
+footer .copyRight {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.portadaContacto {
+  position: relative;
+}
+.portadaContacto .contenedorPortada {
+  padding: 0;
+}
+.portadaContacto img {
+  width: 100%;
+  opacity: 0.3;
+}
+.portadaContacto h1 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  translate: -50%;
+}
+
+.seccionContactoUb {
+  padding: 10px;
+  font-size: 22px;
+}
+.seccionContactoUb .parContact, .seccionContactoUb .seccionMapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionContactoUb .seccionMapa h2 {
+  margin: 20px;
+}
+.seccionContactoUb .seccionMapa h2 i {
+  display: block;
+  text-align: center;
+}
+.seccionContactoUb .seccionMapa ul {
+  list-style: none;
+}
+.seccionContactoUb .seccionMapa ul li {
+  margin: 5px;
+  text-align: center;
+}
+.seccionContactoUb .seccionMapa ul li a {
+  text-decoration: none;
+  color: #626262;
+}
+.seccionContactoUb .seccionMapa .mapaGchu {
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+.seccionForm {
+  background-color: #626262;
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionForm .tituloForm h2 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+}
+.seccionForm .formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionForm .formContact .formText {
+  width: 80%;
+}
+.seccionForm .formContact .formText input, .seccionForm .formContact .formText textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.seccionForm .formContact .formText input:hover, .seccionForm .formContact .formText textarea:hover {
+  transform: scale(1.02);
+}
+.seccionForm .formContact .formText input:focus, .seccionForm .formContact .formText textarea:focus {
+  outline: none;
+  border: 2px solid #000000;
+  transform: scale(1.02);
+}
+.seccionForm .formContact .formText textarea {
+  height: 150px;
+  resize: none;
+}
+.seccionForm .formContact .formText label {
+  margin-bottom: 5px;
+}
+.seccionForm .formContact .submitForm {
+  width: 80%;
+}
+.seccionForm .formContact .submitForm input {
+  margin-right: 6px;
+}
+.seccionForm .formContact .submitForm a {
+  color: #000000;
+  text-decoration: none;
+}
+.seccionForm .formContact .submitForm .botonForm {
+  display: flex;
+  justify-content: end;
+}
+.seccionForm .formContact .submitForm .botonForm button {
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: 20px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.seccionForm .formContact .submitForm .botonForm button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.contenedorMenu .menuImg {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.contenedorMenu .menuImg img {
+  width: 90%;
+}
+
+.menuHelados {
+  padding: 0;
+}
+.menuHelados .contenedorMenuHelados {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.menuHelados .contenedorMenuHelados .cartaHelados {
+  margin: 10px;
+  border: 2px solid #000000;
+}
+.menuHelados .contenedorMenuHelados .cartaHelados h2 {
+  margin: 10px 0 30px 0;
+}
+.menuHelados .contenedorMenuHelados .cartaHelados p {
+  font-size: 23px;
+}
+.menuHelados .contenedorMenuHelados hr {
+  margin: auto;
+  width: 50%;
+}
+.menuHelados .contenedorMenuHelados .saboresHelados ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+.menuHelados .contenedorMenuHelados .saboresHelados ul li {
+  width: 60%;
+}
+.menuHelados .contenedorMenuHelados .saboresHelados ul li h3 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+.menuHelados .contenedorMenuHelados .saboresHelados ul li p {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.menuHelados .contenedorMenuHelados .saboresHelados ul li span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.menuHelados .contenedorMenuHelados .saboresHelados ul li .listSec li {
+  width: 100%;
+}
+.menuHelados .contenedorDelivery .mostrador {
+  color: #ffffff;
+  background-color: #141414;
+  padding: 40px;
+}
+.menuHelados .contenedorDelivery .mostrador h2 {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.menuHelados .contenedorDelivery .mostrador p {
+  font-size: 22px;
+}
+.menuHelados .contenedorDelivery .mostrador .contenedorImgWsp {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.menuHelados .contenedorDelivery .mostrador .contenedorImgWsp img {
+  width: 80%;
+}
+.menuHelados .contenedorDelivery .rappi {
+  color: #141414;
+  background-color: #626262;
+  padding: 40px;
+}
+.menuHelados .contenedorDelivery .rappi h2 {
+  color: #141414;
+  margin-bottom: 35px;
+}
+.menuHelados .contenedorDelivery .rappi p {
+  font-size: 22px;
+}
+.menuHelados .contenedorDelivery .rappi .contenedorImgRappi {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.menuHelados .contenedorDelivery .rappi .contenedorImgRappi img {
+  width: 100%;
+}
+.menuHelados .contenedorDelivery .imgBarista {
+  padding: 0;
+}
+.menuHelados .contenedorDelivery .imgBarista img {
+  width: 100%;
+}
+
+.portadaPasteleria {
+  position: relative;
+}
+.portadaPasteleria .contenedorPortada {
+  padding: 0;
+}
+.portadaPasteleria img {
+  width: 100%;
+  opacity: 0.3;
+}
+.portadaPasteleria .contenedorTitle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  translate: -50%;
+  text-align: center;
+}
+.portadaPasteleria .contenedorTitle h1 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+}
+.portadaPasteleria .contenedorTitle p {
+  font-size: 25px;
+}
+
+.seccionPasteleria {
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 22px;
+}
+.seccionPasteleria .logoPasteleria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.seccionPasteleria .textoPasteleria p {
+  margin: 15px 0;
+}
+.seccionPasteleria .textoPasteleria a {
+  background-color: #ffffff;
+  margin-right: 15px;
+  padding: 8px 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s;
+}
+.seccionPasteleria .textoPasteleria a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.imgPasteleria .rowH .contenedoresH {
+  position: relative;
+  height: 500px;
+  padding: 0;
+  margin: 0;
+}
+.imgPasteleria .rowH .contenedoresH img {
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+}
+.imgPasteleria .rowH .contenedoresH .hoverImg {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.imgPasteleria .rowH .contenedoresH .hoverImg:hover {
+  opacity: 0.8;
+}
+.imgPasteleria .rowS .contenedores {
+  position: relative;
+  height: 250px;
+  padding: 0;
+  margin: 0;
+}
+.imgPasteleria .rowS .contenedores img {
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+}
+.imgPasteleria .rowS .contenedores .hoverImg {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.imgPasteleria .rowS .contenedores .hoverImg:hover {
+  opacity: 0.8;
+}
+
+.portadaGchu .contenedorPortada {
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portadaGchu .contenedorPortada img {
+  width: 100%;
+  opacity: 0.3;
+}
+.portadaGchu .contenedorPortada .titulos {
+  position: absolute;
+  text-align: center;
+}
+.portadaGchu .contenedorPortada .titulos .tituloPrincipal {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 10px 0;
+}
+.portadaGchu .contenedorPortada .titulos .tituloSecundario {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 10px 0;
+}
+.portadaGchu .contenedorPortada .titulos .parrafoTitulo {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.seccionInvitacion .contenedorInvitacion {
+  padding: 50px;
+}
+.seccionInvitacion .contenedorInvitacion .gchu {
+  font-weight: bold;
+  color: #000000;
+}
+.seccionInvitacion .contenedorInvitacion .infoInvitacion h2,
+.seccionInvitacion .contenedorInvitacion .infoInvitacion p,
+.seccionInvitacion .contenedorInvitacion .infoInvitacion div {
+  padding: 10px 0;
+}
+.seccionInvitacion .contenedorInvitacion .infoInvitacion h2 {
+  text-align: center;
+}
+.seccionInvitacion .contenedorInvitacion .infoInvitacion p {
+  font-size: 22px;
+}
+.seccionInvitacion .contenedorInvitacion .infoInvitacion .tags {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.seccionInvitacion .contenedorInvitacion .infoInvitacion .tags i {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 4px 40px;
+  margin: 5px 0;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background-color: #000000;
+  transition: 300ms;
+}
+.seccionInvitacion .contenedorInvitacion .infoInvitacion .tags i:hover {
+  transform: scale(1.1);
+}
+.seccionInvitacion .imgContenedor {
+  padding: 0;
+}
+
+.seccionExperiencia .imgContenedor {
+  padding: 0;
+}
+.seccionExperiencia .contenedorExperiencia {
+  padding: 50px;
+}
+.seccionExperiencia .contenedorExperiencia .comExcl {
+  font-weight: bold;
+  color: #626262;
+}
+.seccionExperiencia .contenedorExperiencia .infoExperiencia h2,
+.seccionExperiencia .contenedorExperiencia .infoExperiencia p,
+.seccionExperiencia .contenedorExperiencia .infoExperiencia a {
+  padding: 20px 0;
+}
+.seccionExperiencia .contenedorExperiencia .infoExperiencia h2 {
+  text-align: center;
+}
+.seccionExperiencia .contenedorExperiencia .infoExperiencia p {
+  font-size: 22px;
+}
+.seccionExperiencia .contenedorExperiencia .infoExperiencia a {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  transition: 300ms;
+}
+.seccionExperiencia .contenedorExperiencia .infoExperiencia a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.seccionImgGchu {
+  padding: 0;
+}
+.seccionImgGchu .contenedorImgGchu {
+  padding-top: 15px;
+}
+.seccionImgGchu .contenedorImgGchu h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.seccionImgGchu .contenedorImgGchu .imageGchu {
+  padding: 0;
+}
+.seccionImgGchu .contenedorImgGchu .imageGchu img {
+  margin-bottom: 2px;
+  padding: 0 2px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

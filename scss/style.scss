@@ -1,0 +1,821 @@
+// Importaciones
+@import url(./partials/_reset.scss);
+@import url(./partials/_fuentes.scss);
+
+// Estilos Generales
+.seccionOscura, .seccionClara {
+    font-family: "Noto Serif", serif;
+}
+
+.seccionOscura {
+    background-color: black;
+    color: white;
+
+    h2 {
+        font-family: "Black Ops One", cursive;
+        font-weight: bold;
+    }
+}
+
+.seccionClara {
+    background-color: white;
+    color: #626262;
+
+    h2 {
+        color: #000000;
+        font-family: "Black Ops One", cursive;
+        font-weight: bold;
+    }
+}
+
+.posicion {
+    color: #626262 !important;
+}
+
+// Barra de Navegacion
+nav {
+    background-color: #ffffff;
+    font-weight: bold;
+
+    .contenedorNav {
+        .logoImg {
+            width: 120px;
+        }
+}
+
+.menuContainer {
+    .navbar-nav {
+        .nav-item {
+            a {
+                margin: 5px 20px;
+                padding: 0;
+                color: #000000;
+
+                &:hover {
+                    color: #626262;
+                }
+
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.redesNav {
+    display: flex;
+    justify-content: center;
+}
+}
+
+// Seccion Portada
+.portada {
+    position: relative;
+    text-align: center;
+    .contenedorPortada {
+        padding: 0;
+    }
+
+    .videoPortada {
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    h1 {
+        font-family: "Black Ops One", cursive;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// Seccion Hero
+.seccionHero {
+    padding: 70px 30px;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .contenedorCarousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carousel-inner {
+        max-width: 500px;
+        }
+    }
+}
+
+// Como LLegar
+.seccionLlegar {
+    padding: 15px;
+
+    h2 {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    .contenedorParLlegar1 {
+        margin-bottom: 25px;
+    }
+
+    .linkUbicacion {
+        display: flex;
+        justify-content: end;
+
+        a {
+            background-color: #ffffff;
+            margin-right: 15px;
+            padding: 5px 10px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 22px;
+            text-decoration: none;
+            color: #000000;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #000000;
+                color: #ffffff;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            display: inline-block;
+            margin: 0 30px;
+
+            i {
+                padding: 5px 10px;
+                font-size: 25px;
+                color: #ffffff;
+                transition: 0.2s;
+
+                &:hover {
+                    color: #626262;
+                }
+            }
+        }
+    }
+}
+
+// Nuestos Visitantes
+.seccionVisitantes {
+    padding: 25px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .contenedorParVisit {
+        display: flex;
+        align-items: center;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .contenedorImgVisitantes {
+        margin: 0 auto;
+        width: 600px;
+    }
+}
+
+// Seccion Horarios //mediaquery
+.seccionHorarios {
+    .contenedorHorarios {
+        padding: 0;
+        position: relative;
+        img {
+            width: 100%;
+            opacity: .3;
+        }
+        .horariosDias {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .horariosSem {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 15px 0;
+                text-align: center;
+                .contenedorDias {
+                    p {
+                        font-size: 30px; //mediaquery
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    padding: 25px;
+    max-height: 100%;
+
+    hr {
+        margin: 20px 0;
+        width: 150px;
+        border: 4px solid #ffffff;
+    }
+
+    li {
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: 0.2s;
+
+        &:hover {
+        color: #626262;
+        }
+    }
+
+.footerUbi, .footerMenu, .footerContacto, .footerRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footerRedes li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.copyRight {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+}
+
+// CONTACTO
+.portadaContacto {
+    position: relative;
+    .contenedorPortada {
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    h1 {
+        
+        font-family: "Black Ops One", cursive;
+        font-weight: bold;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        translate: -50%;
+    }
+}
+
+.seccionContactoUb {
+    padding: 10px;
+    font-size: 22px;
+
+    .parContact, .seccionMapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionMapa {
+        h2 {
+            margin: 20px;
+        }
+
+        h2 i {
+            display: block;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin: 5px;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: #626262;
+                }
+            }
+        }
+        .mapaGchu {
+            width: 100%;
+            height: 400px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.seccionForm {
+    background-color: #626262;
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tituloForm {
+        h2 {
+            font-family: "Black Ops One", cursive;
+            font-weight: bold;
+        }
+    }
+
+    .formContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .formText {
+            width: 80%;
+
+            input, textarea {
+                display: block;
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+                transition: 0.3s;
+
+                &:hover {
+                transform: scale(1.02);
+                }
+
+                &:focus {
+                outline: none;
+                border: 2px solid #000000;
+                transform: scale(1.02);
+                }
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+            }
+
+            label {
+                margin-bottom: 5px;
+            }
+        }
+
+        .submitForm {
+            width: 80%;
+
+            input {
+                margin-right: 6px;
+            }
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .botonForm {
+                display: flex;
+                justify-content: end;
+
+                button {
+                    background-color: #000000;
+                    border: 2px solid #000000;
+                    border-radius: 5px;
+                    padding: 5px 15px;
+                    margin-left: 20px;
+                    color: #ffffff;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MENÚ
+.contenedorMenu{
+    .menuImg {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        img {
+            width: 90%;
+        }
+    }
+}
+
+.menuHelados {
+    padding: 0;
+    .contenedorMenuHelados {
+        display: flex;
+        align-items: center;        
+        text-align: center;
+        .cartaHelados {
+            margin: 10px;
+            border: 2px solid #000000;
+            h2 {
+                margin: 10px 0 30px 0;
+
+            }
+            p{
+                font-size: 23px;
+            }
+        }
+        hr {
+
+            margin: auto;
+            width: 50%;
+        }
+        .saboresHelados {
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                li {
+                    width: 60%;
+                    h3 {
+                        color: #000000;
+                        font-weight: bold;
+                        font-size: 20px;
+                        margin: 20px 0 5px 0;
+    
+                    }
+                    p {
+                        font-size: 17px;
+                        margin-bottom: 5px;
+                    }
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;                        
+                    }
+                    .listSec  {
+                        li {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedorDelivery {
+        .mostrador {
+            color: #ffffff;
+            background-color: #141414;
+            padding: 40px;
+            h2 {
+                color: #ffffff;
+                margin-bottom: 35px;
+            }
+            p {
+                font-size: 22px;
+            }
+            .contenedorImgWsp {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                img {
+                   
+                    width: 80%;
+                }
+            }
+        }
+        .rappi {
+            color: #141414;
+            background-color: #626262;
+            padding: 40px;
+            h2 {
+                color: #141414;
+                margin-bottom: 35px;
+            }
+            p {
+                font-size: 22px;
+            }
+            .contenedorImgRappi {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                img {                   
+                    width: 100%;
+                }
+            }
+        }
+        .imgBarista {
+            padding: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+//PASTELERIA
+.portadaPasteleria {       
+    position: relative;    
+    .contenedorPortada {
+        padding: 0;
+    }
+    img {
+        width: 100%;
+        opacity: 0.3;
+    }
+    .contenedorTitle {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        translate: -50%;
+        text-align: center;
+        h1 {
+            font-family: "Black Ops One", cursive;
+            font-weight: bold;
+        }
+            
+        p {
+            font-size: 25px;            
+        }
+    }
+}
+.seccionPasteleria {
+    margin: 15px 0;
+    padding: 15px;    
+    font-size: 22px;
+
+    .logoPasteleria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+
+    }
+    .textoPasteleria {
+        p {
+            margin: 15px 0;
+        }
+        a {
+            background-color: #ffffff;
+            margin-right: 15px;
+            padding: 8px 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            font-size: 22px;
+            text-decoration: none;
+            color: #000000;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #000000;
+                color: #ffffff;
+            }
+        }
+    }    
+}
+
+.imgPasteleria {
+    .rowH {
+        .contenedoresH {
+            position: relative;
+            height: 500px;
+            padding: 0;
+            margin: 0;        
+            img {
+                padding: 2px;
+                width: 100%;
+                height: 100%;
+            }
+            .hoverImg {
+                background-color: #000000;
+                width: 100%;
+                height: 100%;
+                color: #ffffff;
+                position: absolute;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+
+                transition: 0.5s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            
+        }
+    }
+    .rowS {
+        .contenedores {
+            position: relative;
+            height: 250px;
+            padding: 0;
+            margin: 0;        
+            img {
+                padding: 2px;
+                width: 100%;
+                height: 100%;
+                
+            }
+            .hoverImg {
+                background-color: #000000;
+                width: 100%;
+                height: 100%;
+                color: #ffffff;
+                position: absolute;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+
+                transition: 0.5s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+//GUALEGUAYCHÚ //mediaquery
+.portadaGchu {
+    .contenedorPortada {
+        position: relative;
+        padding: 0; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            opacity: 0.3;
+        }
+        .titulos {//mediaquery
+            position: absolute;
+            text-align: center;
+            .tituloPrincipal {                
+                font-family: "Black Ops One", cursive;
+                font-weight: bold;
+                font-size: 60px;
+                padding: 10px 0;
+            }
+            .tituloSecundario {                
+                font-family: "Black Ops One", cursive;
+                font-weight: bold;
+                font-size: 40px;
+                padding: 10px 0;
+            }
+            .parrafoTitulo {                
+                font-family: "Black Ops One", cursive;
+                font-weight: bold;
+                font-size: 25px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+.seccionInvitacion {
+    .contenedorInvitacion {
+        padding: 50px;
+        .gchu {
+            font-weight: bold;
+            color: #000000;
+        }
+        .infoInvitacion {            
+            h2,
+            p,
+            div {
+                padding: 10px 0;
+            }
+            h2 {
+                text-align: center;
+            }
+            p {
+                font-size: 22px;
+            }
+            .tags {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                i {
+                    font-size: 30px;
+                    color: #ffffff;
+                    padding: 4px 40px;
+                    margin: 5px 0;
+                    border: 2px solid #000000;
+                    border-radius: 8px;
+                    background-color:#000000;
+    
+                    transition: 300ms;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    .imgContenedor {
+        padding: 0;
+    }
+}
+.seccionExperiencia {
+    .imgContenedor {
+        padding: 0;
+    }
+    .contenedorExperiencia {
+        padding: 50px;
+        .comExcl {
+            font-weight: bold;
+            color: #626262;
+        }
+        .infoExperiencia {            
+            h2,
+            p,
+            a {
+                padding: 20px 0;
+            }
+            h2 {
+                text-align: center;
+            }
+            p {
+                font-size: 22px;
+            }
+            a {
+                background-color: #ffffff;
+                color: #000000;
+                font-size: 22px;
+                text-decoration: none;
+                padding: 8px 15px;
+                border: 2px solid #ffffff;
+                border-radius: 15px;
+
+                transition: 300ms;
+                &:hover {
+                    background-color: #000000;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+.seccionImgGchu {
+    padding: 0;
+    .contenedorImgGchu {
+        padding-top: 15px;   
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }  
+        .imageGchu {
+            padding: 0;            
+            img {
+                margin-bottom: 2px;
+                padding: 0 2px;
+                width: 100%
+            }
+        }
+    }
+}
+// MediaQueries
+
+
+@import url(./partials/_queries.scss);
