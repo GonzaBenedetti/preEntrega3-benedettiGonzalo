@@ -1,6 +1,5 @@
 // Importaciones
-@import url(./partials/_reset.scss);
-@import url(./partials/_fuentes.scss);
+@import "./partials/_fuentes.scss";
 
 // Estilos Generales
 .seccionOscura, .seccionClara {
@@ -79,7 +78,7 @@ nav {
 
     .videoPortada {
         width: 100%;
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     h1 {
@@ -264,6 +263,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+    text-align: center;
 }
 
 .footerRedes li {
@@ -293,7 +293,7 @@ footer {
     }
 
     h1 {
-        
+        text-align: center;
         font-family: "Black Ops One", cursive;
         font-weight: bold;
         position: absolute;
@@ -567,6 +567,8 @@ footer {
         left: 50%;
         translate: -50%;
         text-align: center;
+        background-color: red;
+        width: 100%;
         h1 {
             font-family: "Black Ops One", cursive;
             font-weight: bold;

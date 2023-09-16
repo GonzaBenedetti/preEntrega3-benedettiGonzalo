@@ -80,7 +80,7 @@
 //PASTELERIA
 
 //PORTADA
-@media (max-width : 616px) {
+@media (max-width : 692px) {
     .portadaPasteleria {        
         .contenedorTitle {
             h1 {
@@ -89,32 +89,6 @@
                 
             p {
                 font-size: 20px;            
-            }
-        }
-    }
-}
-@media (max-width : 545px) {
-    .portadaPasteleria {        
-        .contenedorTitle {
-            h1 {
-                font-size: 25px;     
-            }
-                
-            p {
-                font-size: 18px;            
-            }
-        }
-    }
-}
-@media (max-width : 454px) {
-    .portadaPasteleria {        
-        .contenedorTitle {
-            h1 {
-                font-size: 21px;     
-            }
-                
-            p {
-                font-size: 15px;            
             }
         }
     }
