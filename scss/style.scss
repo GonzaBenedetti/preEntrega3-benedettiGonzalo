@@ -716,7 +716,7 @@ footer {
 }
 .seccionInvitacion {
     .contenedorInvitacion {
-        padding: 50px;
+        padding: 20px 50px 20px 50px;
         .gchu {
             font-weight: bold;
             color: #000000;
@@ -756,15 +756,19 @@ footer {
         }
     }
     .imgContenedor {
-        padding: 0;
+        padding: 0;        
     }
 }
 .seccionExperiencia {
     .imgContenedor {
         padding: 0;
+        img {
+            
+        height: 100%;
+        }
     }
     .contenedorExperiencia {
-        padding: 50px;
+        padding: 30px 50px 30px 50px;
         .comExcl {
             font-weight: bold;
             color: #626262;
@@ -817,7 +821,29 @@ footer {
         }
     }
 }
+
+.error404 {
+    margin-bottom: 3px;
+    .contenedorText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h1 {
+            font-size: 140px;
+        }
+        p {
+            font-size: 64px;
+        }
+    }
+    .contenedorErrorImg {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
 // MediaQueries
-
-
 @import "./partials/_queries.scss";

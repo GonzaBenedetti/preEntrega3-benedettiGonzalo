@@ -600,7 +600,7 @@ footer .copyRight {
 }
 
 .seccionInvitacion .contenedorInvitacion {
-  padding: 50px;
+  padding: 20px 50px 20px 50px;
 }
 .seccionInvitacion .contenedorInvitacion .gchu {
   font-weight: bold;
@@ -643,8 +643,11 @@ footer .copyRight {
 .seccionExperiencia .imgContenedor {
   padding: 0;
 }
+.seccionExperiencia .imgContenedor img {
+  height: 100%;
+}
 .seccionExperiencia .contenedorExperiencia {
-  padding: 50px;
+  padding: 30px 50px 30px 50px;
 }
 .seccionExperiencia .contenedorExperiencia .comExcl {
   font-weight: bold;
@@ -692,6 +695,29 @@ footer .copyRight {
 .seccionImgGchu .contenedorImgGchu .imageGchu img {
   margin-bottom: 2px;
   padding: 0 2px;
+  width: 100%;
+}
+
+.error404 {
+  margin-bottom: 3px;
+}
+.error404 .contenedorText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.error404 .contenedorText h1 {
+  font-size: 140px;
+}
+.error404 .contenedorText p {
+  font-size: 64px;
+}
+.error404 .contenedorErrorImg {
+  display: flex;
+  justify-content: center;
+}
+.error404 .contenedorErrorImg img {
   width: 100%;
 }
 
@@ -780,6 +806,60 @@ footer .copyRight {
   .portadaGchu .contenedorPortada .titulos .parrafoTitulo {
     font-size: 13px;
     padding: 1px 0;
+  }
+}
+@media (max-width: 650px) {
+  .imgPasteleria .rowH .contenedoresH {
+    position: relative;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+  }
+  .imgPasteleria .rowH .contenedoresH img {
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+  }
+  .imgPasteleria .rowH .contenedoresH .hoverImg {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .imgPasteleria .rowH .contenedoresH .hoverImg:hover {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 768px) {
+  .error404 {
+    margin-bottom: 3px;
+  }
+  .error404 .contenedorText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .error404 .contenedorText h1 {
+    font-size: 128px;
+  }
+  .error404 .contenedorText p {
+    font-size: 32px;
+  }
+  .error404 .contenedorErrorImg {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .error404 .contenedorErrorImg img {
+    width: 100%;
   }
 }
 
