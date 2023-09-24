@@ -1,0 +1,30 @@
+//  SECCIONES
+$secciones: (
+    Clara: $colorClaro,
+    Oscura: $colorOscuro,
+);
+@each $seccion, $color in $secciones {
+    .seccion#{$seccion}{
+        background-color: $color;
+        font-family: $fuente;
+        @if $color == $colorClaro {
+            color: $colorGris;
+            @for $i from 1 to 7 {
+                h#{$i} {
+                    font-family: $fuenteTitulo;
+                    font-weight: bold;
+                    color: $colorTituloOscuro;
+                }
+            }
+        } @else if $color == $colorOscuro {
+            color: $colorClaro;
+            @for $i from 1 to 7 {
+                h#{$i} {
+                    font-family: $fuenteTitulo;
+                    font-weight: bold;
+                    color: $colorTituloClaro;
+                }
+            }
+        }
+    }
+}

@@ -44,7 +44,27 @@
                 }
             }
         }
-    } 
+    }
+    .seccionForm {
+        .formContact {
+    
+            .formText {
+                width: 100%;
+            }    
+            .submitForm {
+                width: 100%;
+    
+                input {
+                    margin-right: 6px;
+                }
+    
+                a {
+                    color: $colorOscuro;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 490px){
     .seccionHorarios {

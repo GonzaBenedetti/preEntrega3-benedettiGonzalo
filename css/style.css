@@ -1,26 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,300;1,500;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
-.seccionOscura, .seccionClara {
+.seccionClara {
+  background-color: #F5F5F5;
   font-family: "Noto Serif", serif;
+  color: #626262;
+}
+.seccionClara h1 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #000000;
+}
+.seccionClara h2 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #000000;
+}
+.seccionClara h3 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #000000;
+}
+.seccionClara h4 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #000000;
+}
+.seccionClara h5 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #000000;
+}
+.seccionClara h6 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #000000;
 }
 
 .seccionOscura {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  font-family: "Noto Serif", serif;
+  color: #F5F5F5;
+}
+.seccionOscura h1 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #F5F5F5;
 }
 .seccionOscura h2 {
   font-family: "Black Ops One", cursive;
   font-weight: bold;
+  color: #F5F5F5;
 }
-
-.seccionClara {
-  background-color: white;
-  color: #626262;
-}
-.seccionClara h2 {
-  color: #000000;
+.seccionOscura h3 {
   font-family: "Black Ops One", cursive;
   font-weight: bold;
+  color: #F5F5F5;
+}
+.seccionOscura h4 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #F5F5F5;
+}
+.seccionOscura h5 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #F5F5F5;
+}
+.seccionOscura h6 {
+  font-family: "Black Ops One", cursive;
+  font-weight: bold;
+  color: #F5F5F5;
 }
 
 .posicion {
@@ -28,7 +77,7 @@
 }
 
 nav {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   font-weight: bold;
 }
 nav .contenedorNav .logoImg {
@@ -62,8 +111,6 @@ nav .redesNav {
   opacity: 0.3;
 }
 .portada h1 {
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -107,10 +154,10 @@ nav .redesNav {
   justify-content: end;
 }
 .seccionLlegar .linkUbicacion a {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   margin-right: 15px;
   padding: 5px 10px;
-  border: 1px solid #ffffff;
+  border: 1px solid #F5F5F5;
   border-radius: 5px;
   font-size: 22px;
   text-decoration: none;
@@ -119,7 +166,7 @@ nav .redesNav {
 }
 .seccionLlegar .linkUbicacion a:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: #F5F5F5;
 }
 .seccionLlegar ul {
   display: flex;
@@ -132,7 +179,7 @@ nav .redesNav {
 .seccionLlegar ul li i {
   padding: 5px 10px;
   font-size: 25px;
-  color: #ffffff;
+  color: #F5F5F5;
   transition: 0.2s;
 }
 .seccionLlegar ul li i:hover {
@@ -191,7 +238,7 @@ footer {
 footer hr {
   margin: 20px 0;
   width: 150px;
-  border: 4px solid #ffffff;
+  border: 4px solid #F5F5F5;
 }
 footer li {
   list-style: none;
@@ -200,7 +247,7 @@ footer li {
 footer a {
   font-size: 18px;
   text-decoration: none;
-  color: #ffffff;
+  color: #F5F5F5;
   transition: 0.2s;
 }
 footer a:hover {
@@ -237,8 +284,6 @@ footer .copyRight {
 }
 .portadaContacto h1 {
   text-align: center;
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -282,15 +327,11 @@ footer .copyRight {
   background-color: #626262;
   font-family: "Noto Serif", serif;
   font-size: 20px;
-  color: white;
+  color: #F5F5F5;
   padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.seccionForm .tituloForm h2 {
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
 }
 .seccionForm .formContact {
   display: flex;
@@ -341,12 +382,13 @@ footer .copyRight {
   border: 2px solid #000000;
   border-radius: 5px;
   padding: 5px 15px;
+  margin-top: 10px;
   margin-left: 20px;
-  color: #ffffff;
+  color: #F5F5F5;
   transition: 0.3s;
 }
 .seccionForm .formContact .submitForm .botonForm button:hover {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   color: #000000;
 }
 
@@ -391,7 +433,6 @@ footer .copyRight {
   width: 60%;
 }
 .menuHelados .contenedorMenuHelados .saboresHelados ul li h3 {
-  color: #000000;
   font-weight: bold;
   font-size: 20px;
   margin: 20px 0 5px 0;
@@ -408,12 +449,12 @@ footer .copyRight {
   width: 100%;
 }
 .menuHelados .contenedorDelivery .mostrador {
-  color: #ffffff;
+  color: #F5F5F5;
   background-color: #141414;
   padding: 40px;
 }
 .menuHelados .contenedorDelivery .mostrador h2 {
-  color: #ffffff;
+  color: #F5F5F5;
   margin-bottom: 35px;
 }
 .menuHelados .contenedorDelivery .mostrador p {
@@ -460,7 +501,7 @@ footer .copyRight {
 .portadaPasteleria .contenedorPortada {
   padding: 0;
 }
-.portadaPasteleria img {
+.portadaPasteleria .contenedorPortada img {
   width: 100%;
   opacity: 0.3;
 }
@@ -472,16 +513,11 @@ footer .copyRight {
   text-align: center;
   width: 100%;
 }
-.portadaPasteleria .contenedorTitle h1 {
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
-}
 .portadaPasteleria .contenedorTitle p {
   font-size: 25px;
 }
 
 .seccionPasteleria {
-  margin: 15px 0;
   padding: 15px;
   font-size: 22px;
 }
@@ -491,23 +527,26 @@ footer .copyRight {
   align-items: center;
   padding: 15px 0;
 }
+.seccionPasteleria .logoPasteleria img {
+  width: 100%;
+}
 .seccionPasteleria .textoPasteleria p {
   margin: 15px 0;
 }
 .seccionPasteleria .textoPasteleria a {
-  background-color: #ffffff;
-  margin-right: 15px;
-  padding: 8px 20px;
+  background-color: #F5F5F5;
+  color: #000000;
   border: 1px solid #000000;
   border-radius: 5px;
+  margin-right: 15px;
+  padding: 8px 20px;
   font-size: 22px;
   text-decoration: none;
-  color: #000000;
   transition: 0.2s;
 }
 .seccionPasteleria .textoPasteleria a:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: #F5F5F5;
 }
 
 .imgPasteleria .rowH .contenedoresH {
@@ -525,7 +564,7 @@ footer .copyRight {
   background-color: #000000;
   width: 100%;
   height: 100%;
-  color: #ffffff;
+  color: #F5F5F5;
   position: absolute;
   top: 0;
   display: flex;
@@ -552,7 +591,7 @@ footer .copyRight {
   background-color: #000000;
   width: 100%;
   height: 100%;
-  color: #ffffff;
+  color: #F5F5F5;
   position: absolute;
   top: 0;
   display: flex;
@@ -581,20 +620,14 @@ footer .copyRight {
   text-align: center;
 }
 .portadaGchu .contenedorPortada .titulos .tituloPrincipal {
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
   font-size: 60px;
   padding: 10px 0;
 }
 .portadaGchu .contenedorPortada .titulos .tituloSecundario {
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
   font-size: 40px;
   padding: 10px 0;
 }
 .portadaGchu .contenedorPortada .titulos .parrafoTitulo {
-  font-family: "Black Ops One", cursive;
-  font-weight: bold;
   font-size: 25px;
   padding: 10px 0;
 }
@@ -625,16 +658,13 @@ footer .copyRight {
 }
 .seccionInvitacion .contenedorInvitacion .infoInvitacion .tags i {
   font-size: 30px;
-  color: #ffffff;
+  color: #F5F5F5;
   padding: 4px 40px;
   margin: 5px 0;
   border: 2px solid #000000;
   border-radius: 8px;
   background-color: #000000;
   transition: 300ms;
-}
-.seccionInvitacion .contenedorInvitacion .infoInvitacion .tags i:hover {
-  transform: scale(1.1);
 }
 .seccionInvitacion .imgContenedor {
   padding: 0;
@@ -665,18 +695,18 @@ footer .copyRight {
   font-size: 22px;
 }
 .seccionExperiencia .contenedorExperiencia .infoExperiencia a {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   color: #000000;
+  border: 2px solid #F5F5F5;
+  border-radius: 15px;
   font-size: 22px;
   text-decoration: none;
   padding: 8px 15px;
-  border: 2px solid #ffffff;
-  border-radius: 15px;
   transition: 300ms;
 }
 .seccionExperiencia .contenedorExperiencia .infoExperiencia a:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: #F5F5F5;
 }
 
 .seccionImgGchu {
@@ -734,6 +764,19 @@ footer .copyRight {
 @media (max-width: 550px) {
   .seccionHorarios .contenedorHorarios .horariosDias .horariosSem .contenedorDias p {
     font-size: 15px;
+  }
+  .seccionForm .formContact .formText {
+    width: 100%;
+  }
+  .seccionForm .formContact .submitForm {
+    width: 100%;
+  }
+  .seccionForm .formContact .submitForm input {
+    margin-right: 6px;
+  }
+  .seccionForm .formContact .submitForm a {
+    color: #000000;
+    text-decoration: none;
   }
 }
 @media (max-width: 490px) {

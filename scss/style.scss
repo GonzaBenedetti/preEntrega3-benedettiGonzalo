@@ -1,39 +1,16 @@
 // Importaciones
 @import "./partials/_fuentes.scss";
+@import "./partials/variables";
+@import "./partials/bucles";
 
-// Estilos Generales
-.seccionOscura, .seccionClara {
-    font-family: "Noto Serif", serif;
-}
-
-.seccionOscura {
-    background-color: black;
-    color: white;
-
-    h2 {
-        font-family: "Black Ops One", cursive;
-        font-weight: bold;
-    }
-}
-
-.seccionClara {
-    background-color: white;
-    color: #626262;
-
-    h2 {
-        color: #000000;
-        font-family: "Black Ops One", cursive;
-        font-weight: bold;
-    }
-}
 
 .posicion {
-    color: #626262 !important;
+    color: $colorGris !important;
 }
 
 // Barra de Navegacion
 nav {
-    background-color: #ffffff;
+    background-color: $colorClaro;
     font-weight: bold;
 
     .contenedorNav {
@@ -48,10 +25,10 @@ nav {
             a {
                 margin: 5px 20px;
                 padding: 0;
-                color: #000000;
+                color: $colorOscuro;
 
                 &:hover {
-                    color: #626262;
+                    color: $colorGris;
                 }
 
                 i {
@@ -82,8 +59,6 @@ nav {
     }
 
     h1 {
-        font-family: "Black Ops One", cursive;
-        font-weight: bold;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -137,19 +112,19 @@ nav {
         justify-content: end;
 
         a {
-            background-color: #ffffff;
+            background-color: $colorClaro;
             margin-right: 15px;
             padding: 5px 10px;
-            border: 1px solid #ffffff;
+            border: 1px solid $colorClaro;
             border-radius: 5px;
             font-size: 22px;
             text-decoration: none;
-            color: #000000;
+            color: $colorOscuro;
             transition: 0.2s;
 
             &:hover {
-                background-color: #000000;
-                color: #ffffff;
+                background-color: $colorOscuro;
+                color: $colorClaro;
             }
         }
     }
@@ -165,11 +140,11 @@ nav {
             i {
                 padding: 5px 10px;
                 font-size: 25px;
-                color: #ffffff;
+                color: $colorClaro;
                 transition: 0.2s;
 
                 &:hover {
-                    color: #626262;
+                    color: $colorGris;
                 }
             }
         }
@@ -239,7 +214,7 @@ footer {
     hr {
         margin: 20px 0;
         width: 150px;
-        border: 4px solid #ffffff;
+        border: 4px solid $colorClaro;
     }
 
     li {
@@ -250,11 +225,11 @@ footer {
     a {
         font-size: 18px;
         text-decoration: none;
-        color: #ffffff;
+        color: $colorClaro;
         transition: 0.2s;
 
         &:hover {
-        color: #626262;
+        color: $colorGris;
         }
     }
 
@@ -294,8 +269,6 @@ footer {
 
     h1 {
         text-align: center;
-        font-family: "Black Ops One", cursive;
-        font-weight: bold;
         position: absolute;
         top: 30%;
         left: 50%;
@@ -332,7 +305,7 @@ footer {
 
                 a {
                     text-decoration: none;
-                    color: #626262;
+                    color: $colorGris;
                 }
             }
         }
@@ -345,21 +318,14 @@ footer {
 }
 
 .seccionForm {
-    background-color: #626262;
+    background-color: $colorGris;
     font-family: "Noto Serif", serif;
     font-size: 20px;
-    color: white;
+    color: $colorClaro;
     padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .tituloForm {
-        h2 {
-            font-family: "Black Ops One", cursive;
-            font-weight: bold;
-        }
-    }
 
     .formContact {
         display: flex;
@@ -382,7 +348,7 @@ footer {
 
                 &:focus {
                 outline: none;
-                border: 2px solid #000000;
+                border: 2px solid $colorOscuro;
                 transform: scale(1.02);
                 }
             }
@@ -405,7 +371,7 @@ footer {
             }
 
             a {
-                color: #000000;
+                color: $colorOscuro;
                 text-decoration: none;
             }
 
@@ -414,17 +380,18 @@ footer {
                 justify-content: end;
 
                 button {
-                    background-color: #000000;
-                    border: 2px solid #000000;
+                    background-color: $colorOscuro;
+                    border: 2px solid $colorOscuro;
                     border-radius: 5px;
                     padding: 5px 15px;
+                    margin-top: 10px;
                     margin-left: 20px;
-                    color: #ffffff;
+                    color: $colorClaro;
                     transition: 0.3s;
 
                     &:hover {
-                        background-color: #ffffff;
-                        color: #000000;
+                        background-color: $colorClaro;
+                        color: $colorOscuro;
                     }
                 }
             }
@@ -452,7 +419,7 @@ footer {
         text-align: center;
         .cartaHelados {
             margin: 10px;
-            border: 2px solid #000000;
+            border: 2px solid $colorOscuro;
             h2 {
                 margin: 10px 0 30px 0;
 
@@ -475,7 +442,6 @@ footer {
                 li {
                     width: 60%;
                     h3 {
-                        color: #000000;
                         font-weight: bold;
                         font-size: 20px;
                         margin: 20px 0 5px 0;
@@ -501,11 +467,11 @@ footer {
 
     .contenedorDelivery {
         .mostrador {
-            color: #ffffff;
-            background-color: #141414;
+            color: $colorClaro;
+            background-color: $colorGrisOscuro;
             padding: 40px;
             h2 {
-                color: #ffffff;
+                color: $colorClaro;
                 margin-bottom: 35px;
             }
             p {
@@ -522,11 +488,11 @@ footer {
             }
         }
         .rappi {
-            color: #141414;
-            background-color: #626262;
+            color: $colorGrisOscuro;
+            background-color: $colorGris;
             padding: 40px;
             h2 {
-                color: #141414;
+                color: $colorGrisOscuro;
                 margin-bottom: 35px;
             }
             p {
@@ -556,10 +522,10 @@ footer {
     position: relative;    
     .contenedorPortada {
         padding: 0;
-    }
-    img {
-        width: 100%;
-        opacity: 0.3;
+        img {
+            width: 100%;
+            opacity: 0.3;
+        }
     }
     .contenedorTitle {
         position: absolute;
@@ -568,10 +534,6 @@ footer {
         translate: -50%;
         text-align: center;
         width: 100%;
-        h1 {
-            font-family: "Black Ops One", cursive;
-            font-weight: bold;
-        }
             
         p {
             font-size: 25px;            
@@ -579,8 +541,7 @@ footer {
     }
 }
 .seccionPasteleria {
-    margin: 15px 0;
-    padding: 15px;    
+    padding: 15px;
     font-size: 22px;
 
     .logoPasteleria {
@@ -588,6 +549,9 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 15px 0;
+        img {
+            width: 100%;
+        }
 
     }
     .textoPasteleria {
@@ -595,19 +559,19 @@ footer {
             margin: 15px 0;
         }
         a {
-            background-color: #ffffff;
+            background-color: $colorClaro;
+            color: $colorOscuro;
+            border: 1px solid $colorOscuro;
+            border-radius: 5px;
             margin-right: 15px;
             padding: 8px 20px;
-            border: 1px solid #000000;
-            border-radius: 5px;
             font-size: 22px;
             text-decoration: none;
-            color: #000000;
             transition: 0.2s;
 
             &:hover {
-                background-color: #000000;
-                color: #ffffff;
+                background-color: $colorOscuro;
+                color: $colorClaro;
             }
         }
     }    
@@ -629,7 +593,7 @@ footer {
                 background-color: #000000;
                 width: 100%;
                 height: 100%;
-                color: #ffffff;
+                color: $colorClaro;
                 position: absolute;
                 top: 0;
                 display: flex;
@@ -661,7 +625,7 @@ footer {
                 background-color: #000000;
                 width: 100%;
                 height: 100%;
-                color: #ffffff;
+                color: $colorClaro;
                 position: absolute;
                 top: 0;
                 display: flex;
@@ -693,21 +657,15 @@ footer {
         .titulos {//mediaquery
             position: absolute;
             text-align: center;
-            .tituloPrincipal {                
-                font-family: "Black Ops One", cursive;
-                font-weight: bold;
+            .tituloPrincipal {
                 font-size: 60px;
                 padding: 10px 0;
             }
-            .tituloSecundario {                
-                font-family: "Black Ops One", cursive;
-                font-weight: bold;
+            .tituloSecundario {
                 font-size: 40px;
                 padding: 10px 0;
             }
-            .parrafoTitulo {                
-                font-family: "Black Ops One", cursive;
-                font-weight: bold;
+            .parrafoTitulo {
                 font-size: 25px;
                 padding: 10px 0;
             }
@@ -719,7 +677,7 @@ footer {
         padding: 20px 50px 20px 50px;
         .gchu {
             font-weight: bold;
-            color: #000000;
+            color: $colorOscuro;
         }
         .infoInvitacion {            
             h2,
@@ -740,17 +698,14 @@ footer {
                 flex-wrap: wrap;
                 i {
                     font-size: 30px;
-                    color: #ffffff;
+                    color: $colorClaro;
                     padding: 4px 40px;
                     margin: 5px 0;
-                    border: 2px solid #000000;
+                    border: 2px solid $colorOscuro;
                     border-radius: 8px;
-                    background-color:#000000;
+                    background-color:$colorOscuro;
     
                     transition: 300ms;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
                 }
             }
         }
@@ -771,7 +726,7 @@ footer {
         padding: 30px 50px 30px 50px;
         .comExcl {
             font-weight: bold;
-            color: #626262;
+            color: $colorGris;
         }
         .infoExperiencia {            
             h2,
@@ -786,18 +741,18 @@ footer {
                 font-size: 22px;
             }
             a {
-                background-color: #ffffff;
-                color: #000000;
+                background-color: $colorClaro;
+                color: $colorOscuro;
+                border: 2px solid $colorClaro;
+                border-radius: 15px;
                 font-size: 22px;
                 text-decoration: none;
                 padding: 8px 15px;
-                border: 2px solid #ffffff;
-                border-radius: 15px;
 
                 transition: 300ms;
                 &:hover {
-                    background-color: #000000;
-                    color: #ffffff;
+                    background-color: $colorOscuro;
+                    color: $colorClaro;
                 }
             }
         }
